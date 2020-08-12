@@ -84,6 +84,70 @@
 
 @media screen and (min-width: 1000px) and (orientation: landscape) {
 
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  /* MENU */
+
+  /* hamburger menu icon */
+
+  .hamburger_div {
+    background: none;
+    height: auto;
+    z-index: 99;
+    padding: 0;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 240px;
+    text-align: auto;
+  }
+
+  .hamburger_logo {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* menu hidden */
+
+  .menu {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    background: none;
+    padding: 25px 30px 25px 20vw;
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: translateX(0vw);
+  }
+
+
+  /* menu show */
+
+  .menu-link {
+    color: #343333;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 0px 10px;
+  }
+
+  .menu-login, .menu-try {
+    color: #fff;
+  }
+
+  /* HEADER */
+
   .double_section {
     display: flex;
     flex-direction: row;
@@ -184,5 +248,27 @@
     font-size: 2.4rem;
   }
 
+}
+
+/* MEDIA QUERY FOR LAPTOPS AND DESKTOP */
+
+@media screen and (min-width: 1440px) and (orientation: landscape) {
+
+  /* DOUBLE SECTION */
+
+  .double_section {
+    padding: 0 10vw;
+    /* max-width: 1000px; */
+  }
+
+  .cards_section {
+    padding: 150px 12vw;
+  }
+
+  .join_section {
+    padding: 0 20vw;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 
 }

@@ -28,6 +28,14 @@ h2,h3,h4 {
   font-weight: 600;
 }
 
+.mobile {
+  display: inline-block;
+}
+
+.desktop {
+  display: none;
+}
+
 .green {
    color: #acdd17;
 }
@@ -111,7 +119,21 @@ h2,h3,h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
-  margin: 25px 0;
+  margin: 10px 0;
+}
+
+.menu-login {
+  background-color: #343333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.menu-try {
+  background-color: #acdd17;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 /* HOMEPAGE */
