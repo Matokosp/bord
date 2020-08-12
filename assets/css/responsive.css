@@ -1,0 +1,102 @@
+/* media query for TABLETS */
+
+@media screen and (min-width: 720px) and (orientation: portrait) {
+
+  /* CARDS SECTION */
+
+  .cards_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .cards_item {
+    width: 40%;
+    margin-top: 30px;
+  }
+
+  /* JOIN SECTION */
+
+  .join_section {
+    padding: 30vh 5vw;
+  }
+
+  .join_section img {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 25%;
+    z-index: -1;
+  }
+
+}
+
+@media screen and (min-width: 900px) and (orientation: portrait) {
+
+  /* CLIENTS SECTION */
+
+  .carousel_section {
+    padding: 80px 10vw;
+  }
+
+  .carousel_section h2 {
+    margin-top: 0;
+  }
+
+  .owl-next {
+    right: -20px;
+  }
+
+  .owl-prev {
+    left: -20px;
+  }
+
+  /* CARDS SECTION */
+
+  .cards_section {
+    padding: 150px 5vw;
+  }
+
+  .cards_item {
+    width: 30%;
+    margin-top: 30px;
+    /* flex: 1; */
+  }
+
+  .plan_cards .cards_item {
+    padding: 30px 10px;
+  }
+
+  .plan_section {
+    padding: 150px 5vw 0 5vw;
+  }
+
+  /* JOIN SECTION */
+
+  .join_section {
+    padding: 20vh 5vw;
+  }
+
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+
+  .double_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    height: 100vh;
+  }
+
+  .double_section_text {
+    width: 30%;
+  }
+
+  .double_section_img {
+    width: 60%;
+  }
+
+}
