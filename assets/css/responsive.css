@@ -106,10 +106,17 @@
     left: 15px;
     width: 240px;
     text-align: auto;
+    transition: 0.4s;
   }
 
   .hamburger_logo {
+    transition: 0.4s;
+    position: absolute;
     width: 100%;
+  }
+
+  .logo-animation-once {
+    opacity: 0;
   }
 
   .hamburger {

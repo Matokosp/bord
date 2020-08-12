@@ -50,7 +50,43 @@ $('a[href^="#"]').on('click', function(event) {
 			$('#hambIconOne').removeClass('hamburger_icon_one');
 			$('#hambIconTwo').removeClass('hamburger_icon_two');
 			$('#hambIconThree').removeClass('hamburger_icon_three');
-			// $('.menuicon').removeClass('menuicon-black');
-			// e.stopPropagation();
 		}
 	})
+
+
+
+
+  // RESPONSIVE
+
+  var x = window.matchMedia("(min-width: 1000px)");
+  //
+	function myFunction(x) {
+	  if (x.matches) { // If media query matches
+
+        var sectionOne = $('#sectionOne').offset();
+        var sectionOne = $('#sectionTwo').offset();
+	  		var windowHeight = $( window ).height();
+	  		var position = $(window).scrollTop();
+
+
+  //       // MENU CHANGE
+  //
+        $(window).on('scroll', function(){
+          if ($(window).scrollTop() >= sectionOne.top * 1 / 10) {
+            $('.menu').css('background-color', '#fff');
+            $('.hamburger_div').css('width', '180px');
+            $('.hamburger_logo:nth-child(2)').css('opacity', '0');
+            $('.hamburger_logo:nth-child(3)').css('opacity', '1');
+          } else {
+            $('.menu').css('background-color', 'transparent');
+            $('.hamburger_div').css('width', '240px');
+            $('.hamburger_logo:nth-child(2)').css('opacity', '1');
+            $('.hamburger_logo:nth-child(3)').css('opacity', '0');
+          }
+        })
+
+		}
+	}
+
+	myFunction(x) // Call listener function at run time
+	x.addListener(myFunction) // Attach listener function on state changes
