@@ -222,6 +222,14 @@
     padding: auto 10px;
   }
 
+  /* DECISION SECTION */
+
+  .decision_text ul li {
+    font-size: 1.2rem;
+}
+
+  /* PLANES SECTION */
+
   .plan_cards .cards_item {
     color: #343333;
     padding: 50px 10px;
