@@ -80,6 +80,8 @@
 
 }
 
+/* MEDIA QUERY FOR LAPTOPS AND DESKTOP */
+
 @media screen and (min-width: 1000px) and (orientation: landscape) {
 
   .double_section {
@@ -92,11 +94,95 @@
   }
 
   .double_section_text {
-    width: 30%;
+    width: 35%;
+  }
+
+  .double_section_text h2 {
+    font-size: 2.7rem;
   }
 
   .double_section_img {
     width: 60%;
   }
+
+  .try {
+    font-size: 1.2rem;
+  }
+
+  /* CAROUSEL SECTION */
+
+  .carousel_section {
+    padding: 80px 10vw;
+  }
+
+  .carousel_section h2 {
+    margin: 0 0 50px 0;
+    font-size: 2.4rem;
+  }
+
+  .owl-next {
+    right: -20px;
+  }
+
+  .owl-prev {
+    left: -20px;
+  }
+
+  /* CARDS SECTION */
+
+  .cards_section {
+    padding: 120px 10vw;
+  }
+  .cards_section h2 {
+    margin-top: 0;
+    font-size: 2.4rem;
+  }
+
+  .cards_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .cards_item {
+    width: 30%;
+    margin-top: 30px;
+    padding: auto 10px;
+  }
+
+  .plan_cards .cards_item {
+    color: #343333;
+    padding: 50px 10px;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .plan_cards .cards_item:hover {
+    background-color: rgba(172,221,23,0.5);
+    transform: scale(1.07);
+  }
+
+  /* JOIN SECTION */
+
+  .join_section {
+    padding: 0 20vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .join_section img {
+    width: 70%;
+    left: 15%;
+    top: 0;
+  }
+
+  .join_section h2 {
+    font-size: 2.4rem;
+  }
+
 
 }
