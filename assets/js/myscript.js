@@ -90,20 +90,21 @@ $('a[href^="#"]').on('click', function(event) {
           $(this).prop('src', 'assets/images/animation.gif')
         });
 
-        $('#cardAnimationOne').on('mouseenter', function(){
+        $('#cardOne').on('mouseenter', function(){
           $('#cardAnimationOne').prop('src', '');
-          $(this).prop('src', 'assets/images/isotipo.gif');
+          $('#cardAnimationOne').prop('src', 'assets/images/isotipo.gif');
         });
 
-        // $('#cardAnimationTwo').on('mouseenter', function(){
-        //   $('#cardAnimationTwo').prop('src', 'none');
-        //   $('#cardAnimationTwo').prop('src', 'assets/images/isotipo.gif')
-        // });
-        //
-        // $('#cardAnimationThree').on('mouseenter', function(){
-        //   $('#cardAnimationThree').prop('src', 'none');
-        //   $('#cardAnimationThree').prop('src', 'assets/images/isotipo.gif')
-        // });
+        $('#cardTwo').on('mouseenter', function(){
+          $('#cardAnimationTwo').prop('src', '');
+          $('#cardAnimationTwo').prop('src', 'assets/images/isotipo-2.gif');
+        });
+
+        $('#cardThree').on('mouseenter', function(){
+          $('#cardAnimationThree').prop('src', '');
+          $('#cardAnimationThree').prop('src', 'assets/images/isotipo-3.gif');
+        });
+
 
 		}
 	}
