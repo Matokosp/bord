@@ -121,3 +121,38 @@ $('a[href^="#"]').on('click', function(event) {
 
 	myFunction(x) // Call listener function at run time
 	x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+  $(document).ready(function() {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      nav: true,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+          },
+          600:{
+              items:2,
+              nav:false
+          },
+          1000:{
+              items:4,
+              nav:false
+          }
+      },
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      navText: ["<img src='assets/images/myprevimage.png'>","<img src='assets/images/mynextimage.png'>"]
+    });
+    $('.play').on('click', function() {
+      owl.trigger('play.owl.autoplay', [1000])
+    })
+    $('.stop').on('click', function() {
+      owl.trigger('stop.owl.autoplay')
+    })
+  })
