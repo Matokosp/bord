@@ -24,6 +24,14 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  color: #f2f2f2;
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
 h2,h3,h4 {
   font-weight: 600;
 }
@@ -36,8 +44,10 @@ h2,h3,h4 {
   display: none;
 }
 
-.green {
-   color: #acdd17;
+
+
+.dots {
+  display: none;
 }
 
 /* MENU */
@@ -178,6 +188,7 @@ h2,h3,h4 {
 .owl-carousel .item {
   width: 70%;
   margin: auto;
+  transition: 0.4s;
 }
 
 .owl-carousel .item img {
@@ -350,4 +361,148 @@ footer {
   height: 20px;
   vertical-align: middle;
   margin-right: 5px;
+}
+
+/* CONTACT */
+
+.contact_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 80px 5vw;
+}
+
+.contact_title {
+  width: 100%;
+}
+
+.contact_title img {
+  width: 100%;
+}
+
+.form_section {
+  width: 100%;
+  /* padding: 30px 5vw; */
+}
+
+.form_section h2 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.form_section p {
+  font-size: 0.9rem;
+}
+
+.contact_form {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.contact_form input,textarea {
+  width: 95%;
+  margin: 5px 0;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 0.9rem;
+}
+
+.contact_form input[type=submit] {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background: #acdd17;
+  color: #fff;
+  width: 30%;
+  cursor: pointer;
+}
+
+.animation-bord {
+  position: absolute;
+  bottom: 10px;
+  width: 150px;
+}
+
+.animation-bord img {
+  width: 100%;
+}
+
+/* FAQ PAGE */
+
+.faq_body {
+  background-color: #f2f2f2;
+  color: #343333;
+}
+
+.green {
+   color: #acdd17;
+}
+
+.faq_section {
+  padding: 70px 5vw;
+}
+
+.faq_container {
+  display: flex;
+  flex-direction: column;
+  transform: 0.4s;
+}
+
+.question_list {
+  transition: 0.4;
+}
+
+.spread-butt {
+  cursor: pointer;
+}
+
+.spread-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  margin-right: 10px;
+  transition: 0.4s;
+  transform: rotate(-90deg);
+  transform-origin: center center;
+}
+
+.spread-icon-rotate {
+  transform: rotate(0deg);
+}
+
+.question_list li {
+  border-bottom: 1px solid #211915;
+  transition: 0.4s;
+}
+
+.question_list li h4 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.answer {
+  opacity: 0;
+  height: 0;
+  visibility: hidden;  
+  transition: 0.4s;
+}
+
+.answer-show {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.faq-img {
+  width: 100%;
+  padding-top: 100px;
+}
+
+.faq-img img {
+  width: 100%;
 }

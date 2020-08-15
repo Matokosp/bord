@@ -54,6 +54,16 @@ $('a[href^="#"]').on('click', function(event) {
 	})
 
 
+  // FAQ BUTTON DISPLAY
+
+  $( document ).ready(function() {
+    // $('.answer').hide();
+});
+
+  $('.spread-butt').on('click', function(){
+    $(this).children('.spread-icon').toggleClass('spread-icon-rotate')
+    $(this).siblings('.answer').toggleClass('answer-show');
+  })
 
 
   // RESPONSIVE

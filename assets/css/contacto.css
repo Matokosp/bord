@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  color: #343333;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 30px 5vw 80px 5vw;
+}
+
+.contact_title {
+  width: 100%;
+}
+
+.contact_title img {
+  width: 100%;
+}
+
+.form_section {
+  width: 100%;
+  /* padding: 30px 5vw; */
+}
+
+.form_section h2 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.form_section p {
+  font-size: 0.9rem;
+}
+
+.contact_form {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.contact_form input,textarea {
+  width: 95%;
+  margin: 5px 0;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 0.9rem;
+}
+
+.contact_form input[type=submit] {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  background: #acdd17;
+  color: #fff;
+  width: 30%;
+}
+
+.animation-bord {
+  position: absolute;
+  bottom: 10px;
+  width: 150px;
+}
+
+.animation-bord img {
+  width: 100%;
+}
+
+
+/* media query for TABLETS */
+
+@media screen and (min-width: 720px) and (orientation: portrait) {
+
+  .contact_section {
+    height: 100vh;
+    flex-direction: row;
+    padding: auto;
+  }
+
+}
+
+@media screen and (min-width: 1000px) and (orientation: landscape) {
+
+  .contact_section {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15vw;
+  }
+
+  .animation-bord {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    width: 150px;
+  }
+
+  .contact_title {
+    width: 40%;
+  }
+
+  .form_section {
+    width: 40%;
+  }
+
+  /* .animation-bord {
+    position: absolute;
+    bottom: 10px;
+    width: 150px;
+  } */
+
+}
